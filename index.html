@@ -1,0 +1,333 @@
+<!-- saved from url=(0041)https://yaden2018.github.io/multispeaker/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Investigation into voice protection preserving human perception by speech generation
+    </title>
+    <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <link rel="apple-touch-icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+</head>
+<body>
+<script type="text/javascript" async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION/analytics.js.download"></script>
+<script async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-125850295-1');
+</script>
+
+<article>
+    <header>
+        <h1>Context-dependent frame-level speaker modeling in voice anonymization</h1>
+    </header>
+</article>
+
+<div>
+    <b>Abstract:</b> The state-of-the-art voice anonymization framework is built upon replacing the voice attributes of the original speaker with those of a pseudo-speaker. Existing methods rely on utterance- and speaker-level representations of speaker attributes. Aiming at improving the performance of voice anonymization, this paper proposes a waveform generation model that leverages frame-level speaker modeling. Specifically, attention weights are obtained from the alignment of linguistic content between original and cohort utterances, enabling context-dependent estimation of speaker representations for frames in anonymized speech. Experiments conducted on the LibriSpeech and VCTK datasets validated the efficacy of the proposed method in improving voice anonymization performance, particularly regarding de-identification, voice distinctiveness and speech quality.
+</div>
+
+<br/>
+<br/>
+<br/>
+
+
+Here, we showcase three kinds of anonymized speech:
+(1)The proposed method
+(2)NAC;
+(3)PSD;
+
+<h2>Libri-Dev Male</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Audio Name</th>
+            <th>The proposed method</th>
+            <th>NAC</th>
+            <th>PSD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第一行 -->
+        <tr>
+            <td>174-50561-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/male/174-50561-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/male/174-50561-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/male/174-50561-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>251-136532-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/male/251-136532-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/male/251-136532-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/male/251-136532-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>422-122949-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/male/422-122949-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/male/422-122949-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/male/422-122949-0000.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Libri-Dev Female</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Audio Name</th>
+            <th>The proposed method</th>
+            <th>NAC</th>
+            <th>PSD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第一行 -->
+        <tr>
+            <td>1462-170142-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/female/1462-170142-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/female/1462-170142-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/female/1462-170142-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>1673-143397-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/female/1673-143397-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/female/1673-143397-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/female/1673-143397-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>84-121550-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-dev/female/84-121550-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-dev/female/84-121550-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-dev/female/84-121550-0000.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Libri-Test Male</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Audio Name</th>
+            <th>The proposed method</th>
+            <th>NAC</th>
+            <th>PSD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第一行 -->
+        <tr>
+            <td>260-123288-0001</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/male/260-123288-0001.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/male/260-123288-0001.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/male/260-123288-0001.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>61-70970-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/male/61-70970-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/male/61-70970-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/male/61-70970-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>672-122797-0001</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/male/672-122797-0001.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/male/672-122797-0001.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/male/672-122797-0001.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Libri-Test Female</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Audio Name</th>
+            <th>The proposed method</th>
+            <th>NAC</th>
+            <th>PSD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第一行 -->
+        <tr>
+            <td>121-123852-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/female/121-123852-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/female/121-123852-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/female/121-123852-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>1221-135767-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/female/1221-135767-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/female/1221-135767-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/female/1221-135767-0000.wav">
+                </audio>
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>237-134493-0000</td> <!-- 音频名称 -->
+            <td>
+                <audio controls="">
+                    <source src="context/libri-test/female/237-134493-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="nac/libri-test/female/237-134493-0000.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="psd/libri-test/female/237-134493-0000.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
