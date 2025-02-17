@@ -41,15 +41,18 @@ SPEECH GENERATION/js"></script>
 
 First, We introduce the weight diagram of our attention module.
 
-<figure style="display: inline-block; margin-right: 20px;">
-    <img src="short_attn.png" alt="Long Attention" style="width: 30%;">
-    <figcaption>In short_atten, we demonstrate the attention patterns between utterances with identical content spoken by different speakers (P225_001.wav and P232_0001.wav from the VCTK dataset, both containing "please call stella"). The attention weights exhibit a clear diagonal pattern, indicating that the attention module successfully captures the phonetic alignment between corresponding segments of the source and cohort utterances. This alignment ensures that the selected value vectors (V) through attention weights are content-dependent and phonetically consistent.</figcaption>
-</figure>
+<div style="display: flex; justify-content: space-between;">
+    <figure style="flex: 1; margin-right: 20px;">
+        <img src="short_attn.png" alt="Long Attention" style="width: 100%;">
+        <figcaption>In short_atten, we demonstrate the attention patterns between utterances with identical content spoken by different speakers (P225_001.wav and P232_0001.wav from the VCTK dataset, both containing "please call stella"). The attention weights exhibit a clear diagonal pattern, indicating that the attention module successfully captures the phonetic alignment between corresponding segments of the source and cohort utterances. This alignment ensures that the selected value vectors (V) through attention weights are content-dependent and phonetically consistent.</figcaption>
+    </figure>
 
-<figure style="display: inline-block;">
-    <img src="long_attn.png" alt="Short Attention" style="width: 40%;">
-    <figcaption>In long_atten, we examine the attention mechanism's behavior when processing utterances with different content lengths. The source utterance remains P232_0001.wav, while the target utterance (P232_002.wav) contains "ask her to bring these things from the store". The attention module demonstrates its ability to identify and align phonetically similar units across different linguistic content(e.g. within /AHO L/ and /AO1 R/ in the upper right corner, and /AO1 K/ and /HH K/ in the LOWER left & right corner). This sophisticated alignment capability enables the model to construct content-dependent pseudo vectors by effectively combining relevant phonetic information from diverse speakers and utterances. Specifically, for each frame in the source utterance, the resulting pseudo vector represents a weighted combination of phonetically aligned segments from multiple speakers' utterances, preserving the crucial phonetic structure while allowing for speaker variation.</figcaption>
-</figure>
+    <figure style="flex: 1;">
+        <img src="long_attn.png" alt="Short Attention" style="width: 100%;">
+        <figcaption>In long_atten, we examine the attention mechanism's behavior when processing utterances with different content lengths. The source utterance remains P232_0001.wav, while the target utterance (P232_002.wav) contains "ask her to bring these things from the store". The attention module demonstrates its ability to identify and align phonetically similar units across different linguistic content(e.g. within /AHO L/ and /AO1 R/ in the upper right corner, and /AO1 K/ and /HH K/ in the LOWER left & right corner). This sophisticated alignment capability enables the model to construct content-dependent pseudo vectors by effectively combining relevant phonetic information from diverse speakers and utterances. Specifically, for each frame in the source utterance, the resulting pseudo vector represents a weighted combination of phonetically aligned segments from multiple speakers' utterances, preserving the crucial phonetic structure while allowing for speaker variation.</figcaption>
+    </figure>
+</div>
+
 
 
 Here, we showcase three kinds of anonymized speech:
